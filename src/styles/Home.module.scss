@@ -1,0 +1,105 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--ColorMain);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.containerForm {
+    width: 80%;
+    height: 80vh;
+    background-color: var(--ColorMain2);
+    border-radius: 1%;
+    display: flex;
+    margin: 0 auto;
+ 
+    @media(max-width:1024px){
+        width: 100%;
+        height: 100vh;
+      }
+
+    .containerInput,
+    .containerIMG {
+        width: 50%;
+
+    }
+
+    .containerInput {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media(max-width:1024px){
+            width: 90%;
+            max-width: 567px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 70%;
+            min-width: 367px;
+
+           
+
+            a {
+                color: var(--White);
+                font-size: .8rem;
+                font-style: normal;
+                font-weight: 200;
+                padding: 10px 0;
+
+                &:hover{
+                    color: #ffffffa2;
+                }
+            }
+        }
+    }
+
+    .containerIMG {
+        background-image: url('https://th.bing.com/th/id/OIP.1Q_iuHJRz7mQWdpBwzNv8AHaEK?rs=1&pid=ImgDetMain');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 467px;
+
+        @media (max-width:1024px){
+            display: none;
+        }
+
+        .containerEffect {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff23;
+            backdrop-filter: blur(50px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            h2 {
+                color: var(--ColorMain);
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 200;
+                margin-top: 20px;
+            }
+        }
+
+      
+    }
+}

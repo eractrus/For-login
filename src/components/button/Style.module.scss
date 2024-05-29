@@ -1,0 +1,23 @@
+.buttonForm{
+    width:100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 1.4rem;
+    color: var(--White);
+    background-color: var(--ColorD1);
+    transition: all .3s ease-in;
+
+
+
+    &:hover{
+        background-color: var(--ColorMain2);
+        border: 1px solid var(--ColorD1);
+        color: var(--ColorD1);
+        transition: all .5s ease-out;
+    }
+
+
+}
